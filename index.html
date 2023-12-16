@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Agendamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #0066cc;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0050a5;
+        }
+
+        select {
+            width: calc(100% + 2px); /* Compensate for the border-box */
+            margin-bottom: 16px;
+        }
+
+        div {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Agendamento Salão</h1>
+
+<form method="post" action="index.php">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" required>
+
+    <label for="contato">Contato:</label>
+    <input type="text" name="contato" required>
+
+    <label for="data">Data:</label>
+    <input type="date" name="data" required>
+
+    <label for="profissional">Profissional:</label>
+    <input type="text" name="profissional" required>
+
+    <label for="procedimento">Procedimento:</label>
+    <input type="text" name="procedimento" required>
+
+    <label for="horario">Horário:</label>
+    <input type="time" name="horario" required>
+
+    <label for="valor">Valor:</label>
+    <input type="text" name="valor" required>
+
+    <input type="submit" value="Agendar">
+</form>
+
+<script>
+    // Função showFields permanece a mesma
+</script>
+
+</body>
+</html>
